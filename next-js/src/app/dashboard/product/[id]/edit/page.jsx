@@ -1,8 +1,6 @@
 import { CONFIG } from 'src/global-config';
 import axios, { endpoints } from 'src/lib/axios';
 
-import { ProductEditView } from 'src/sections/product/view';
-
 // ----------------------------------------------------------------------
 
 export const metadata = { title: `Product edit | Dashboard - ${CONFIG.appName}` };
@@ -12,7 +10,7 @@ export default async function Page({ params }) {
 
   const { product } = await getProduct(id);
 
-  return <ProductEditView product={product} />;
+  return;
 }
 
 // ----------------------------------------------------------------------

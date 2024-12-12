@@ -2,8 +2,6 @@ import { CONFIG } from 'src/global-config';
 import axios, { endpoints } from 'src/lib/axios';
 import { getProduct } from 'src/actions/product-ssr';
 
-import { ProductShopDetailsView } from 'src/sections/product/view';
-
 // ----------------------------------------------------------------------
 
 export const metadata = { title: `Product details - ${CONFIG.appName}` };
@@ -13,7 +11,7 @@ export default async function Page({ params }) {
 
   const { product } = await getProduct(id);
 
-  return <ProductShopDetailsView product={product} />;
+  return;
 }
 
 // ----------------------------------------------------------------------
